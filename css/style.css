@@ -1,0 +1,33 @@
+body {  /*change the background color of the html page - if it's not yellow, it's not working */
+   background-color: #FCF3CF
+}
+
+.birdgroup {
+  border: solid 1px gray;
+  padding: 20px;
+}
+
+.eachbird {
+  border: solid 1px orange;
+  padding: 20px;
+  margin: 3px;
+  text-align: center;
+}
+
+.eachbird img { /*shrink ALL images to a decent size so that they don't take up too much space */
+  max-width: 60%;
+}
+
+.birdgroup {
+  display: flex;
+  flex-grow: 2;
+}
+
+@media screen and (max-width: 780px) {
+    .birdgroup {
+      flex-direction: column;
+    }
+    .eachbird {
+      max-width: 100%;
+    }
+}
